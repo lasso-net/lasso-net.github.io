@@ -16,25 +16,25 @@
         // customised options
         // • auto-render specific keys, e.g.:
         delimiters: [{
-            left: '$$',
-            right: '$$',
-            display: true
-          },
-          {
-            left: '$',
-            right: '$',
-            display: false
-          },
-          {
-            left: '\\(',
-            right: '\\)',
-            display: false
-          },
-          {
-            left: '\\[',
-            right: '\\]',
-            display: true
-          }
+          left: '$$',
+          right: '$$',
+          display: true
+        },
+        {
+          left: '$',
+          right: '$',
+          display: false
+        },
+        {
+          left: '\\(',
+          right: '\\)',
+          display: false
+        },
+        {
+          left: '\\[',
+          right: '\\]',
+          display: true
+        }
         ],
         // • rendering keys, e.g.:
         throwOnError: false
@@ -92,30 +92,30 @@
   <p>
     <b>LassoNet</b> is a method for feature selection in neural networks, to enhance interpretability of the final
     network.
-    <ul>
-      <li>It uses a novel objective function and learning algorithm, that encourage the network to use only a subset of
-        the available input features. That is, the resulting network is <b>"feature sparse"</b></li>
-      <li> This is achieved not by post-hoc analysis of a standard neural network but is <b>built into the objective
-          function
-          itself</b>:
-        <ul>
-          <li>Input-to-output (skip layer) connections are added to the network with an L1 penalty on its weights</li>
-          <li>The weight for each feature in this layer acts as an upper bound for all hidden layer weights involving
-            that feature</li>
-        </ul>
-      </li>
-      <li> The result is an <b>entire path of network solutions</b>, with varying amounts of feature sparsity. This is
-        analogous to the lasso solution path for linear regression
-      </li>
-    </ul>
+  <ul>
+    <li>It uses a novel objective function and learning algorithm, that encourage the network to use only a subset of
+      the available input features. That is, the resulting network is <b>"feature sparse"</b></li>
+    <li> This is achieved not by post-hoc analysis of a standard neural network but is <b>built into the objective
+        function
+        itself</b>:
+      <ul>
+        <li>Input-to-output (skip layer) connections are added to the network with an L1 penalty on its weights</li>
+        <li>The weight for each feature in this layer acts as an upper bound for all hidden layer weights involving
+          that feature</li>
+      </ul>
+    </li>
+    <li> The result is an <b>entire path of network solutions</b>, with varying amounts of feature sparsity. This is
+      analogous to the lasso solution path for linear regression
+    </li>
+  </ul>
   </p>
 
   <hr>
 
-    <h1>LassoNet in 2 minutes</h1>
-    <iframe src="https://www.youtube.com/embed/bbqpUfxA_OA" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+  <h1>LassoNet in 2 minutes</h1>
+  <iframe src="https://www.youtube.com/embed/bbqpUfxA_OA" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 
   <hr>
 
@@ -177,7 +177,7 @@
     The algorithms and method used in this package came primarily out of research in Rob Tibshirani's lab at Stanford
     University. If you use LassoNet in your research we would appreciate a citation to the paper:
     <pre>
-        @article{JMLR:v22:20-848,
+    @article{JMLR:v22:20-848,
       author  = {Ismael Lemhadri and Feng Ruan and Louis Abraham and Robert Tibshirani},
       title   = {LassoNet: A Neural Network with Feature Sparsity},
       journal = {Journal of Machine Learning Research},
